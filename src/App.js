@@ -1,23 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import UserDropdown from './components/UserDropdown';
+import UserPanel from './components/UserPanel';
+import UserAccordion from './components/UserAccordion';
+import ControlledAccordions from './components/ControlledAccordions';
+import EditableAccordions from './components/EditableAccordions';
+import UserList from './components/UserList';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <UserDropdown /> */}
+      {/* <UserPanel /> */}
+      {/* <UserAccordion /> */}
+      <EditableAccordions />
+      <ControlledAccordions />
+      <UserList />
     </div>
   );
 }
